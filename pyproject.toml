@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python_tokenizers"
+version = "0.1.0"
+description = ""
+authors = ["Marisa Hudspeth <mhudspeth@umass.edu>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+transformers = {extras = ["torch"], version = "^4.46.1"}
+tokenizers = "^0.20.1"
+maturin = "^1.7.4"
+numpy = ">=1.22.4,<1.29.0"
+scipy = "^1.8.1"
+suffix_array_rs = {file = "python_tokenizers/suffix_array_rs/target/wheels/suffix_array_rs-0.1.0-cp310-cp310-linux_x86_64.whl"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
